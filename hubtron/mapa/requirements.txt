@@ -3,5 +3,3 @@ SpeechRecognition==3.8.1
 datetime
 pyttsx3==2.90
 wikipedia==1.4.0
-pywhatkit==4.1
-
