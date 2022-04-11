@@ -1,7 +1,7 @@
 streamlit
-speech_recognition
+SpeechRecognition==3.8.1
 datetime
-pyttsx3
-wikipedia
-pywhatkit
+pyttsx3==2.90
+wikipedia==1.4.0
+pywhatki==5.3
 
