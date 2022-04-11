@@ -3,7 +3,7 @@ import speech_recognition as sr
 import datetime
 import pyttsx3
 import wikipedia
-import pywhatkit
+# import pywhatkit
 import streamlit as st
 
 recognizer = sr.Recognizer()
@@ -35,7 +35,7 @@ st.markdown("### Os comandos são simples")
 st.markdown("Apenas use: ")
 st.write("Marvin + relógio : para saber as horas.")
 st.write("Marvin + procurar + COISA QUE SE QUEIRA: para saber sobre alguma coisa.")
-st.write("Marvin + toque + NOME DA MÚSICA QUE SE QUEIRA: para abrir algum video do YouTube")
+# st.write("Marvin + toque + NOME DA MÚSICA QUE SE QUEIRA: para abrir algum video do YouTube")
 
 def chamaMarvin():
     with sr.Microphone() as source:  # microphone as source
@@ -73,11 +73,11 @@ def chamaMarvin():
                 maquina.say(resultado)
                 maquina.runAndWait()
 
-            elif 'toque' in voice_data:
-                musica = voice_data.replace('toque', '')
-                resultado = pywhatkit.playonyt(musica)
-                maquina.say(resultado)
-                maquina.runAndWait()
+#             elif 'toque' in voice_data:
+#                 musica = voice_data.replace('toque', '')
+#                 resultado = pywhatkit.playonyt(musica)
+#                 maquina.say(resultado)
+#                 maquina.runAndWait()
 
 
 while True:
